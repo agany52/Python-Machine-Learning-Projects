@@ -61,3 +61,6 @@ Clone this repository.
 Ensure you have the required libraries installed (pandas, numpy, matplotlib, scikit-learn).
 
 Run the qc_hyperparameter_tuner.ipynb notebook. The notebook contains all the code for simulation, tuning, and visualization.
+
+<img width="1226" height="619" alt="image" src="https://github.com/user-attachments/assets/3a2442d5-3050-4120-b2c6-cda7994dcedd" />
+
