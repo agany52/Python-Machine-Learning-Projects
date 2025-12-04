@@ -32,7 +32,7 @@ Baseline: ~79% Accuracy
 
 Feature Engineering (One-Hot Encoding): Improved to ~82% Accuracy
 
-Threshold Tuning: Adjusted decision threshold to 0.8 to maximize Precision (91%), ensuring that when the model predicts disease, it is highly confident.
+Threshold Tuning: Lowered decision threshold to 0.2 to maximize Recall, ensuring that we minimize False Negatives (missing a sick patient), even if it means slightly more false alarms.
 
 📂 Project Structure
 
