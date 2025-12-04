@@ -37,6 +37,23 @@ Run the app:
 
 streamlit run streamlit_app.py
 
+🌐 Deployment (Streamlit Cloud)
+
+This app is set up for easy deployment on Streamlit Community Cloud:
+
+Prepare Requirements: Ensure a requirements.txt file exists in the repository with the necessary libraries (streamlit, pandas, scikit-learn, joblib, numpy).
+
+Push to GitHub: Upload the code (streamlit_app.py, heart_disease_rf_model.pkl, requirements.txt) to a GitHub repository.
+
+Deploy:
+
+Go to Streamlit Community Cloud and log in.
+
+Connect your GitHub account.
+
+Select your repository and the main file (streamlit_app.py).
+
+Click Deploy!
 
 📊 Model Performance (Test Set)
 
