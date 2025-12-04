@@ -1,39 +1,50 @@
-Heart Disease Prediction & Analysis 🫀
+🫀 Heart Disease Risk Predictor
 
-📌 Project Overview
+A machine learning application that predicts the likelihood of heart disease in patients based on 13 clinical features. Built with Python, Scikit-Learn, and Streamlit.
 
-An exploratory data analysis and prediction model for heart disease presence. This project investigates the relationship between cardiovascular metrics (like chest pain type, cholesterol, and exercise-induced angina) and the presence of heart disease.
+🎯 Project Goal
 
-Key Objective: Can we accurately predict heart disease using a simple Logistic Regression model, and how do variables like Angina impact those predictions?
+To build a diagnostic tool that prioritizes clinical safety (high Recall) over raw accuracy. As a phlebotomist transitioning into data science, I recognized that in a medical screening context, a False Negative (missing a sick patient) is far worse than a False Positive.
 
 🛠️ Tech Stack
 
-Language: Python
+Model: Random Forest Classifier (Optimized for Recall)
 
-Libraries: Pandas, Scikit-Learn, Matplotlib, Seaborn
+App: Streamlit (Web Interface)
 
-Tools: Jupyter Notebook
+Data Processing: Pandas & NumPy
 
-🔍 Key Insights & "The Angina Anomaly"
+Validation: 5-Fold Cross-Validation
 
-During the analysis, I discovered a counter-intuitive correlation in the dataset regarding Exercise Induced Angina (exang).
+🧠 Key Features
 
-Typically, angina is a sign of heart disease.
+Recall Optimization: The model's decision threshold was tuned from 0.5 to 0.3. This improved the detection of sick patients (Recall) from 75% to 90%.
 
-In this dataset, patients with angina were statistically less likely to have the target heart disease label.
+Data Leakage Fix: Identified and removed ~700 duplicate rows from the original UCI dataset that were artificially inflating accuracy scores to 99%.
 
-Hypothesis: This suggests a potential labeling issue in the dataset source or a specific subset of patients where angina acts as a differentiating factor against other conditions.
+Interactive UI: Allows clinicians to input vitals (BP, Cholesterol, EKG) and receive real-time risk assessments.
 
-📊 Model Performance
+🚀 How to Run Locally
 
-I iterated on a Logistic Regression model:
+Clone the repository.
 
-Baseline: ~79% Accuracy
+Install dependencies:
 
-Feature Engineering (One-Hot Encoding): Improved to ~82% Accuracy
+pip install pandas scikit-learn streamlit joblib
 
-Threshold Tuning: Lowered decision threshold to 0.2 to maximize Recall, ensuring that we minimize False Negatives (missing a sick patient), even if it means slightly more false alarms.
 
+Run the app:
+
+streamlit run streamlit_app.py
+
+
+📊 Model Performance (Test Set)
+
+Accuracy: ~82%
+
+Recall (Sensitivity): ~90% (at 0.3 threshold)
+
+Precision: ~78%
 📂 Project Structure
 
 Heart_Disease_Analysis.ipynb: The main analysis and modeling code.
