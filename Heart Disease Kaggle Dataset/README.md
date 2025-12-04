@@ -37,5 +37,3 @@ Threshold Tuning: Adjusted decision threshold to 0.8 to maximize Precision (91%)
 📂 Project Structure
 
 Heart_Disease_Analysis.ipynb: The main analysis and modeling code.
-
-data/: Contains the Kaggle heart disease dataset.
