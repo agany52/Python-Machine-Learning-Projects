@@ -6,23 +6,13 @@ The goal was to provide data-backed insights on where to focus development resou
 
 💡 Key Strategic Insights
 
-Insight
+The Strategic Pivot The analysis confirmed a successful transition from hardware to software development. The highest volume of recent game releases is on PC (391) and iOS (119), not legacy consoles.
 
-Finding
+Recommendation: Confirm investment focus has successfully transitioned from hardware to high-volume software platforms.
 
-Business Recommendation
+PC Quality Volatility PC titles exhibit the highest volatility in User Scores, fluctuating wildly between hits and flops.
 
-The Strategic Pivot
-
-The highest volume of recent game releases is on PC (391) and iOS (119), not legacy consoles.
-
-Confirm investment focus has successfully transitioned from hardware to high-volume software platforms.
-
-PC Quality Volatility
-
-PC titles exhibit the highest volatility in User Scores, fluctuating wildly between hits and flops.
-
-Implement intensive pre-release QA and project selection rigor for the high-risk/high-reward PC portfolio.
+Recommendation: Implement intensive pre-release QA and project selection rigor for the high-risk/high-reward PC portfolio.
 
 Project Goal
 
